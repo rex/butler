@@ -1,4 +1,4 @@
-media_butler
+butler
 ============
 
 Simple application that I am building with the intention of making it much easier to view and manage multimedia files (primarily audio) in various locations on my machine.
@@ -34,15 +34,13 @@ Application Dependencies - Production
 
 **`sidekiq`**: https://github.com/mperham/sidekiq
 
-**`slim`**:
+**`slim`**: https://github.com/slim-template/slim
 
-**`slim-rails`**:
+**`slim-rails`**: https://github.com/slim-template/slim-rails
 
 **`pusher`**: https://github.com/pusher/pusher-gem
 
 **`pushover`**: https://github.com/erniebrodeur/pushover
-
-**`genghis`**: https://github.com/bobthecow/genghis
 
 **`rufus-scheduler`**: https://github.com/jmettraux/rufus-scheduler
 
