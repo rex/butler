@@ -23,6 +23,8 @@ gem 'pushover'
 gem 'rufus-scheduler'
 gem 'echonest-ruby-api'
 gem 'browserlog'
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
 
 group :development do
   gem 'better_errors'

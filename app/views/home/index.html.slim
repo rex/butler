@@ -1,0 +1,73 @@
+h1 Pierce's Music
+
+h3 = "#{@artists.length} Artists"
+
+- for artist in @artists do
+  .panel.panel-default
+    .panel-heading
+      h4.panel-title = artist[:name]
+    .list-group
+      - for album in artist.albums do
+        .list-group-item
+          h4.list-group-item-heading = album[:name]
+          - for track in album.tracks
+            p.list-group-item-text = "#{track[:title]} (#{track[:file]})"
+
+/ table.table
+/   thead
+/     th Name
+/     th Albums
+/     th Tracks
+/   tbody
+/     - for artist in @artists do
+/       tr
+/         td = artist[:name]
+/         td
+/           - artist.albums.each do |album|
+/             p = album[:name]
+/         td
+/           - for track in artist.tracks do
+/             p = track[:title]
+
+/ h3 = "#{@albums.length} Albums"
+/ table.table
+/   thead
+/     th Name
+/     th Artists
+/     th Tracks
+/   tbody
+/     - for album in @albums do
+/       tr
+/         td = album[:name]
+/         td
+/           - for artist in album.artists do
+/             p = artist[:name]
+/         td
+/           - for track in album.tracks do
+/             p = track[:title]
+
+/ h3 = "#{@tracks.length} Tracks"
+
+/ table.table
+/   thead
+/     th Title
+/     th Artist
+/     th Album
+/     th File
+/   tbody
+/     - for track in @tracks do
+/       tr
+/         td = track[:title]
+/         - if track.artist
+/           td = track.artist[:name]
+/         - else
+/           td --
+
+/         - if track.album
+/           td = track.album[:name]
+/         - else
+/           td --
+
+/         td = track[:file]
+
+/ p = @tracks.length
