@@ -25,6 +25,9 @@ gem 'echonest-ruby-api'
 gem 'browserlog'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
+gem 'taglib-ruby'
+gem 'ruby-progressbar'
+gem 'sidekiq-limit_fetch'
 
 group :development do
   gem 'better_errors'
